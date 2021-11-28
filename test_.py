@@ -5,7 +5,7 @@ from hypothesis import given
 from hypothesis.strategies import integers
 
 from app import app
-from comon.util import fibonacci, reverse_fibonacci
+from comon.util import *
 
 class Fib_basic(unittest.TestCase):
     def test_index(self):
@@ -76,7 +76,7 @@ class Reverse_Fibo(unittest.TestCase):
 
     @given(integers(min_value=3, max_value=50))
     def test_function(self, num):
-        assert reverse_fibonacci(fibonacci(num)) == num
+        assert reverse_fibonacci(functools_fibonacci(num)) == num
 
 
 if __name__ == "__main__":
