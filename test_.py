@@ -7,6 +7,7 @@ from hypothesis.strategies import integers
 from app import app
 from comon.util import *
 
+
 class Fib_basic(unittest.TestCase):
     def test_index(self):
         """Testing the respone status code for basic fibonacci implementation"""
@@ -61,6 +62,7 @@ class Fib_advanced(unittest.TestCase):
         self.assertEqual(json.loads(response.data)["data"], 5)
         response = tester.get("/v1/fibonacci/advanced/7")
         self.assertEqual(json.loads(response.data)["data"], 13)
+
 
 class Reverse_Fibo(unittest.TestCase):
     def test_index(self):
