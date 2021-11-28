@@ -28,4 +28,4 @@ def advanced_fibonacci(n, cache):
 def reverse_fibonacci(k):
     if k == 0:
         return 0
-    return ceil(log(k * sqrt(5) + 1 / 2) / log((1 + sqrt(5)) / 2))
+    return round(log(k * sqrt(5) + 1 / 2) / log((1 + sqrt(5)) / 2))
