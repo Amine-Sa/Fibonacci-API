@@ -15,8 +15,8 @@ $ python app.py
 **How to run the API in Docker :**
 
 ```
-$ docker -t build Fibonacci-API .
-$ docker run --network host -d --name fibo Fibonacci-API
+$ docker build -t fibonacci-api .
+$ docker run --network host -d --name fibo fibonacci-api
 ```
  - This will run the API on `127.0.0.0:5000`
 
