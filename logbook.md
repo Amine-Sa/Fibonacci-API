@@ -33,7 +33,7 @@ For the final level I made an inverse function for the fibonacci series. The fun
 
 Route : `/v1/reverse-fibonacci/k`
 
-**After implementing functions, creating and adding resources to my application, I updated the structure of my project to a structure that scales easily with largest projects and maintains an organised layout.**
+**After implementing functions, creating and adding resources to my application, I updated the structure of my project to a structure that scales easily with largest projects and maintains an organised layout.**  
 **Here is my final structure : **
 ```
 ├── app.py  
@@ -62,8 +62,8 @@ Route : `/v1/reverse-fibonacci/k`
 
 ### Testing Web Application :
 
-**To be able to test my API I created a small Web App with Flask that I putted inside the test file and will run in a different server.**
+**To be able to test my API I created a small Web App with Flask that I putted inside the test directory and will run in a different server.**
 
-### Changed for Production :
+### Changes for Production :
 
 **If the API is meant for production use the first step will be handling errors and bad inputs inside resources files (I believe that handling errors inside the resource will be less expensive and more secured than hadling it inside the called function. Handling the bad inputs inside our function could expose some snesitive informations about it).
