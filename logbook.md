@@ -62,8 +62,9 @@ Route : `/v1/reverse-fibonacci/k`
 
 ### Testing Web Application :
 
-**To be able to test my API I created a small Web App with Flask that I putted inside the test directory and will run in a different server.**
+**To be able to test my API I created a small Web App with Flask that I putted inside the test directory and will run in a different server. (I'm not sure if it is the most used method neither the best but it did the job...)**
 
 ### Changes for Production :
 
-**If the API is meant for production use the first step will be handling errors and bad inputs inside resources files (I believe that handling errors inside the resource will be less expensive and more secured than hadling it inside the called function. Handling the bad inputs inside our function could expose some snesitive informations about it).
+**If the API is meant for production use the first step will be handling errors and bad inputs inside resources files (I believe that handling errors inside the resource will be less expensive and more secured than hadling it inside the called function. Handling the bad inputs inside our function could expose some sensitive informations about it).**  
+**I would also like to limit the cache size, maybe it isn't a big deal for a small return *(An integer in our case)* but it could be harmful with bigger objects to save every recursive call.**  
