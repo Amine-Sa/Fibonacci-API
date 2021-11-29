@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>Fibonacci - API</title>
+
+    </head>
+    <body>
+        <h3  style="text-align:center" class="container">Fibonacci API Testing !</h3>
+        <div class="container"><br>
+        <div class="row align-items-center justify-content-center">
+        <div class="col-md-4">
+            <form method="POST" action="">
+                {{ form.hidden_tag() }}
+                {% if response %}   
+                    <h3>Results : {{ response.json()['data'] }}</h3>
+                {% endif %}
+                <p class='form-control'>
+                    {{ form.my_number.label }}
+                    {{ form.my_number(size=15) }}
+                </p>
+                <ul class='form-control'>
+                    {{ form.choice.label }}
+                    {{ form.choice }}
+                </ul>
+                <p  style="text-align:center" class="form-group">
+                    {{ form.submit(class="btn btn-success") }}
+                </p>
+            </form>
+        </div>
+        </div>
+        </div>
+    </body>
+</html>
