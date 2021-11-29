@@ -1,1 +1,32 @@
 # Fibonacci-API
+
+![](https://fr.wikipedia.org/wiki/Fichier:Fibonacci_spiral_34.svg)
+
+### Running the API :
+
+**How to run the API for development :**
+
+```
+python3 -m venv env
+source env/bin/activate
+pip install -r requirements.txt
+python app.py
+```
+This will run the API on `127.0.0.0:5000`
+
+**How to run the API in Docker :**
+
+```
+docker -t build Fibonacci-API .
+docker run --network host -d --name fibo Fibonacci-API
+```
+This will run the API on `127.0.0.0:5000`
+
+### Running the Testing Wab App :
+
+**How to run the Test WebApp :** 
+
+```
+python tests/WebTester.py
+```
+This will run the test server on `localhost:8000`
