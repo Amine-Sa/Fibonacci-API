@@ -19,7 +19,7 @@ class input_form(FlaskForm):
         choices=["Basic", "Functools", "Advanced", "Inverse"],
         validators=[DataRequired(message="Please Fill This Field")],
     )
-    submit = SubmitField("Submit")
+    submit = SubmitField("Calculate")
 
 
 @app.route("/", methods=["GET", "POST"])
