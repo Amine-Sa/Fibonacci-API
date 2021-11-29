@@ -58,3 +58,12 @@ Route : `/v1/reverse-fibonacci/k`
 
 ### Docker image :
 
+**For the docker image I used Alpine Linux which is a light weight distribution. This container will allow us to run the API and to deploy it easily.**  
+
+### Testing Web Application :
+
+**To be able to test my API I created a small Web App with Flask that I putted inside the test file and will run in a different server.**
+
+### Changed for Production :
+
+**If the API is meant for production use the first step will be handling errors and bad inputs inside resources files (I believe that handling errors inside the resource will be less expensive and more secured than hadling it inside the called function. Handling the bad inputs inside our function could expose some snesitive informations about it).
