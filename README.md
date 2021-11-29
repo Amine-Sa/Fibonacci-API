@@ -29,3 +29,10 @@ Always inside the virtual environment :
 $ python tests/WebTester.py
 ```
  - This will run the test server on `localhost:8000`
+
+### Running the Unit Tests :
+
+Inside the virtual environment :
+```
+$ pytest
+```
