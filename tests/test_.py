@@ -54,6 +54,7 @@ class Fib_functools(unittest.TestCase):
         """Testing the functools fibonacci functions results"""
         assert functools_fibonacci(num) == fibonacci(num)
 
+
 class Fib_advanced(unittest.TestCase):
     def test_index(self):
         """Testing the respone status code for advanced fibonacci implementation"""
